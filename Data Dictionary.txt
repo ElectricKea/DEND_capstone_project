@@ -1,0 +1,27 @@
+Table Name: fact_temp_table     
+name: datestamp | type: date | expected values: datetime format value  
+name: avg_temp | type: float | expected values: values in C°   
+name: avg_Temp_uncert | type: float | expected values: Uncertainty values in C°  
+name: city | type: string | expected values: city name  
+name: country | type: string | expected values: country name  
+
+
+Table Name: dim_city_table  
+name: city | type: string | expected values: city name  
+name: country | type: string | expected values: country name  
+name: longitude | type: string | longitude of the city given as numeric value and 'N' or 'S'  
+name: latitude | type: string | latitude of the city given as numeric value and 'E' or 'W'  
+
+
+Table Name: dim_co2_table  
+name: datestamp | type: date | expected values: datetime format value  
+name: co2_ppm | type: string | expected values: value given as PPM  
+
+
+Table Name: dim_date_table  
+name: datestamp | type: date | expected values: datetime format value  
+name: year | type: integer | expected values: year    
+name: month | type: integer | expected values: month of the year (1-12)  
+name: day | type: integer | expected values: day of the month (1-31)  
+name: week | type: integer | expected values: week of the year (1-53)  
+name: weekday | type: integer | expected values: day of the week as a number (0-6, Monday=0)   
